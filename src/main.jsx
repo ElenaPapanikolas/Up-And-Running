@@ -1,12 +1,14 @@
 import { StrictMode } from 'react'
-import { createRoot } from 'react-dom/client'
+import  ReactDOM  from 'react-dom/client'
+import { RouterProvider } from 'react-router-dom';
+import router from './Routing.jsx';
 // Imports `ChakraProvider` component
 import { ChakraProvider } from '@chakra-ui/react'
 // Imports the extendTheme function
 import { extendTheme } from '@chakra-ui/react'
-import App from './App.jsx'
 import './index.css'
 
+// Override Chakra default theme
 const theme = extendTheme({
   styles: {
     global: {
@@ -30,10 +32,10 @@ const theme = extendTheme({
 });
 
 
-createRoot(document.getElementById('root')).render(
+ReactDOM.createRoot(document.getElementById('root')).render(
   <StrictMode>
     <ChakraProvider theme={theme}>
-    <App />
+      <RouterProvider router={router} bg/>
     </ChakraProvider>
   </StrictMode>,
 )
