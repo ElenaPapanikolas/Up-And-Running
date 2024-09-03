@@ -13,19 +13,14 @@ const theme = extendTheme({
   styles: {
     global: {
       'html, body': {
-        //background image
-        backgroundImage: 'url("./images/technology.jpg")',
-        backgroundColor: 'black' ,
-        backgroundSize: 'cover',
-        backgroundPosition: 'center',
-        backgroundRepeat: 'no-repeat',
-        backgroundAttachment: 'fixed',
-        height: '100%',
-        margin: 0,
+  
+        backgroundColor: 'var(--columbia-blue)' ,
+        color: 'var(--black)',
 
         // Font styles
-        // fontFamily: '',
-        // fontSize: '18px',
+        fontFamily: 'Audiowide',
+        fontSize: '20px',
+        
       },
     },
   },

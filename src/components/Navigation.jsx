@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { Button } from '@chakra-ui/react';
+import { Stack } from '@chakra-ui/react';
 
 
 
@@ -7,29 +7,25 @@ export default function Navigation() {
 
     return (
         <div >
-            <Link to="/" >
-                    <Button>
-                        About Me 
-                    </Button>
-            </Link>
+            <Stack spacing={4} direction='row' align='center'>
 
-            <Link to="/contact" >
-                    <Button>
-                        Contact
-                    </Button>
-            </Link>
+                <Link to="/" >
+                    About Me 
+                </Link>
 
-            <Link to="/portfolio" >
-                    <Button>
-                        Portfolio
-                    </Button>
-            </Link>
+                <Link to="/contact" >
+                    Contact
+                </Link>
 
-            <Link to="/resume" >
-                    <Button>
-                        Resume
-                    </Button>
-            </Link>
+                <Link to="/portfolio" >
+                    Portfolio
+                </Link>
+
+                <Link to="/resume" >
+                    Resume
+                </Link>
+
+            </Stack>
         </div>
     );
 }
