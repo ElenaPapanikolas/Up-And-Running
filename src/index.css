@@ -1,7 +1,7 @@
 /* root colors */
 :root {
     /* CSS HEX */
---process-cyan: #01baefff;
+--process-cyan: rgb(7, 194, 245);
 --verdigris: #0cbabaff;
 --russian-violet: #380036ff;
 --dark-purple: #26081cff;

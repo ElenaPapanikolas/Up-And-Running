@@ -1,20 +1,33 @@
 import Navigation from './Navigation';
-import { Container } from '@chakra-ui/react'
+import { Box, Heading } from '@chakra-ui/react'
 
 
 export default function Header() {
 
     const styles = {
+        Nav: {
+            fontFamily: 'Creepster',
+            fontSize: '30px', 
+            color: 'var(--black)',
+        },
         Header: {
             fontFamily: 'Creepster',
-            fontSize: '40px', 
-            color: 'var(--space-cadet)'
-        }
+            fontSize: '60px',
+            color: 'var(--black)',
+            whiteSpace: 'nowrap',
+        }, 
+        
+    
     }
    
     return (
-        <Container style= {styles.Header} centerContent >
+        <Box display="flex" justifyContent="space-between" style= {styles.Nav} >
+             
+                <Heading style= {styles.Header} mx={3} mt={4}>
+                Elena Papanikolas
+                </Heading>
+             
             <Navigation/>
-        </Container>
+        </Box>
     );
 }

@@ -14,7 +14,7 @@ const theme = extendTheme({
     global: {
       'html, body': {
   
-        backgroundColor: 'var(--columbia-blue)' ,
+        backgroundColor: 'white' ,
         color: 'var(--black)',
 
         // Font styles

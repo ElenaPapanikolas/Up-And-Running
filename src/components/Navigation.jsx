@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { Stack } from '@chakra-ui/react';
+import { Stack, Box} from '@chakra-ui/react';
 
 
 
@@ -7,25 +7,25 @@ export default function Navigation() {
 
     return (
         <div >
-            <Stack spacing={4} direction='row' align='center'>
+            
+                <Stack spacing={4} direction='row' align='center' mt={4} >
+                    <Box as={Link} to="/" mx={4}>
+                        About Me 
+                    </Box>
 
-                <Link to="/" >
-                    About Me 
-                </Link>
+                    <Box as={Link} to="/contact" mx={4}>
+                        Contact
+                    </Box>
 
-                <Link to="/contact" >
-                    Contact
-                </Link>
+                    <Box as={Link} to="/portfolio" mx={4}>
+                        Portfolio
+                    </Box>
 
-                <Link to="/portfolio" >
-                    Portfolio
-                </Link>
-
-                <Link to="/resume" >
-                    Resume
-                </Link>
-
-            </Stack>
+                    <Box as={Link} to="/resume" mx={4}>
+                        Resume
+                    </Box>
+                </Stack>
+         
         </div>
     );
 }
