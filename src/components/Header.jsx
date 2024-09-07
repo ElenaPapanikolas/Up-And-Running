@@ -3,7 +3,6 @@ import { Box, Heading } from '@chakra-ui/react'
 
 
 export default function Header() {
-
     const styles = {
         Nav: {
             fontFamily: 'Creepster',
@@ -16,18 +15,17 @@ export default function Header() {
             color: 'var(--black)',
             whiteSpace: 'nowrap',
         }, 
-        
-    
     }
    
     return (
-        <Box display="flex" justifyContent="space-between" style= {styles.Nav} >
+        <Box display='flex' justifyContent='space-between' style= {styles.Nav} >
              
-                <Heading style= {styles.Header} mx={3} mt={4}>
-                Elena Papanikolas
-                </Heading>
-             
+            <Heading style= {styles.Header} mx={3} mt={4}>
+            Elena Papanikolas
+            </Heading>
+
             <Navigation/>
+
         </Box>
     );
 }
