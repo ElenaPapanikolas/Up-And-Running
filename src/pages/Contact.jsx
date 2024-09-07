@@ -1,12 +1,11 @@
 import { useState } from 'react';
-import { Box, Button, FormControl, FormLabel, Input, Textarea, useToast } from '@chakra-ui/react';
+import { Box, Button, FormControl, FormLabel, Input, Textarea, useToast, Text, SimpleGrid } from '@chakra-ui/react';
 
 
 
 
 export default function Contact() {
 
-    
         const [formData, setFormData] = useState({
             name: '',
             email: '',
@@ -29,22 +28,23 @@ export default function Contact() {
 
             setFormData({ name: '', email: '', message: '' });
             toast({
-                title: "Message sent.",
-                description: "I've received your message and will get back to you shortly.",
+                title: "Message sent!",
+                description: "I've received your message and will get back to you shortly!",
                 status: "success",
                 duration: 5000,
                 isClosable: true,
              });
-
-        
-
-
-    };
+        };
 
 
     return (
-        <Box maxW="lg" mx="auto" p={4} borderWidth={1} borderRadius="md" boxShadow="md">
-      <form >
+        <SimpleGrid columns={{ base: 1, md: 2 }}> 
+        {/* Contact Form Box */} 
+        <Box m={7} p={4} borderWidth={1} borderRadius="md" boxShadow="md" borderColor='black' > 
+           <Text fontSize='2xl' mb={4}>
+            Send Me A Message
+           </Text>
+        <form >
         <FormControl mb={4} isRequired>
           <FormLabel htmlFor="name">Name</FormLabel>
           <Input
@@ -54,6 +54,8 @@ export default function Contact() {
             value={formData.name}
             onChange={handleChange}
             placeholder="John Doe"
+            borderColor='black'
+            boxShadow='md'
           />
         </FormControl>
 
@@ -66,6 +68,8 @@ export default function Contact() {
             value={formData.email}
             onChange={handleChange}
             placeholder="john.doe@example.com"
+            borderColor='black'
+            boxShadow='md'
           />
         </FormControl>
 
@@ -78,18 +82,39 @@ export default function Contact() {
             onChange={handleChange}
             placeholder="Your message here..."
             rows={6}
+            borderColor='black'
+            boxShadow='md'
           />
         </FormControl>
-
+        
         <Button
             onClick={handleSubmit}
-          colorScheme="cyan"
+          colorScheme="yellow"
           type="submit"
+          boxShadow="md"
         >
           Send Message
         </Button>
       </form>
     </Box>
+
+    {/* Contact Info Box */}
+    <Box
+        m={7}
+        p={4}
+        borderWidth={1}
+        borderRadius="md"
+        boxShadow="md"
+        borderColor='black'
+        >
+          
+            <Text fontSize='2xl' mb={4}>Contact Info</Text>
+        <Box border='1px' borderRadius='md' boxShadow='md' p={6}> 
+            <Text mb={2}><strong>Email:</strong> epapanikolas@hotmail.com</Text>
+            <Text mb={2}><strong>Phone:</strong> 435 229 2627</Text>
+        </Box>     
+    </Box>
+    </SimpleGrid>
     );
 };
 
