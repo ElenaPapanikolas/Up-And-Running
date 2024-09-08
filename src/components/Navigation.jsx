@@ -6,7 +6,7 @@ export default function Navigation() {
         <div >
             <Stack spacing={4} direction='row' align='center' mt={4} >
                 <Box as={Link} to='/' mx={4}>
-                    About Me 
+                    About 
                 </Box>
 
                 <Box as={Link} to='/contact' mx={4}>
@@ -23,4 +23,4 @@ export default function Navigation() {
             </Stack>
         </div>
     );
-}
+};

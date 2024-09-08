@@ -79,7 +79,7 @@ export default function Contact() {
             message: errors.message ? 'Message is required.' : '',
         });
         toast({
-            title: 'Error!',
+            title: 'Uh oh!',
             description: 'Please fill out all fields correctly before submitting.',
             status: 'error',
             duration: 5000,

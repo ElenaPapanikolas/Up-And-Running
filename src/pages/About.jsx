@@ -1,6 +1,6 @@
 import { Box, Image, Container, Text, Heading } from '@chakra-ui/react'
 
-export default function AboutMe() {
+export default function About() {
     const styles= {
         Image: {
             borderRadius: '50%', 
@@ -23,7 +23,7 @@ export default function AboutMe() {
                     <Heading style= {styles.Heading}>
                         About Me
                     </Heading>
-                    
+
                     <Text mx={3} mt={4}>
                         Hey there! Im Elena, a passionate junior developer specializing in JavaScript, and eager to continue learning and expanding my skill set.
                     </Text>
@@ -33,4 +33,4 @@ export default function AboutMe() {
         </div>
         
     );
-}
+};

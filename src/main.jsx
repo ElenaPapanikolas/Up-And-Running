@@ -2,9 +2,9 @@ import { StrictMode } from 'react'
 import  ReactDOM  from 'react-dom/client'
 import { RouterProvider } from 'react-router-dom';
 import router from './Routing.jsx';
-// Imports `ChakraProvider` component
+// Importing `ChakraProvider` component
 import { ChakraProvider } from '@chakra-ui/react'
-// Imports the extendTheme function
+// Importing the extendTheme function
 import { extendTheme } from '@chakra-ui/react'
 import './index.css'
 
@@ -20,6 +20,19 @@ const theme = extendTheme({
       },
     },
   },
+  components: {
+    Button: {
+      // Define styles for different color schemes
+      variants: {
+        solid: {
+          _hover: {
+            bg: 'yellow.400', // Set the hover background color
+            color: 'white', // Optionally change the text color on hover
+          },
+        },
+      },
+    },
+  },  
 });
 
 ReactDOM.createRoot(document.getElementById('root')).render(
