@@ -1,5 +1,7 @@
 import { Box, Image, Text, Heading, SimpleGrid } from '@chakra-ui/react'
 
+import photo1 from '../assets/images/photo1.jpeg';
+
 export default function About() {
     const styles= {
         Image: {
@@ -32,7 +34,7 @@ export default function About() {
             </Box> 
             
             <Box m={7} p={4} display='flex' justifyContent='center' >
-                <Image src='./images/photo1.jpeg' alt='Photo of Elena Papanikolas' style={styles.Image} mx={4}  />
+                <Image src={photo1} alt='Photo of Elena Papanikolas' style={styles.Image} mx={4}  />
             </Box>  
             
         </SimpleGrid>

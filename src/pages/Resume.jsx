@@ -3,6 +3,7 @@ import { Box, Text, SimpleGrid, Button, Image, useColorModeValue } from '@chakra
 
 import resume1 from '../assets/images/Resumepg1.png';
 import resume2 from '../assets/images/Resumepg2.png';
+import EPresume from '../assets/EPresume.pdf';
 
 export default function Resume() {
 
@@ -163,7 +164,7 @@ export default function Resume() {
 
                 {!isHovered && ( 
                     <Box m={9} display='flex' justifyContent='center'>
-                        <a href='../src/assets/EPresume.pdf' download='EPresume.pdf'>
+                        <a href={EPresume} download='Elena_Papanikolas_Resume'>
                             <Button colorScheme='yellow'>Download Resume</Button>
                         </a>
                     </Box>
