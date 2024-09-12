@@ -6,7 +6,7 @@ import router from './Routing.jsx';
 import { ChakraProvider } from '@chakra-ui/react'
 // Importing the extendTheme function
 import { extendTheme } from '@chakra-ui/react'
-import './index.css'
+
 
 // Overrides Chakra default theme
 const theme = extendTheme({
