@@ -3,8 +3,7 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 ## Description
-Welcome to Up-And-Running, my developer portfolio made using React and Chakra UI. This project has been my favorite one to date. I'm really enjoying using React and can't wait to add more to this portfolio.
-
+Welcome to Up-And-Running, my developer portfolio made using React and Chakra UI. This is a single-page-application using the latest technologies. Up-And-Running features a bit about me, my resume, ways to contact me, and showcases some of my favorite projects.
 ## Table of Contents
 * [Installation](#installation)
 * [Usage](#usage)
@@ -21,7 +20,9 @@ This application is deployed using Netlify. Please see the link below for the de
 ## Usage
 Click [here]() to view the deployed application.
 
-Check out my latest developer portfolio. This is a single-page-application using React and Chakra UI. The About Me component is selected by default and tells a little bit about me and shows a current photo. The navigation links at the top of the page allow the user to view a Portfolio, Resume, and Contact component. The Portfolio component showcases six of my favorite projects, with a short description and screenshot, and links to the corresponding GitHub repository and deployed application. The next Resume component lists my proficiencies and an image to view my resume quickly, and a Download Resume button to download my resume directly for your records. The last Contact component shows my contact information and a contact form to send me a message to get in contact with me. The footer shows icon links to my GitHub, LinkedIn, and Hackerrank profiles.
+Check out my latest developer portfolio. To start, the About Me component is selected by default and tells a little bit about me and shows a current photo. The navigation links at the top of the page allow the user to view Portfolio, Resume, and Contact components. The Portfolio component showcases six of my favorite projects, with a short description and screenshot, and links to the corresponding GitHub repository and deployed application. The next Resume component lists my proficiencies and an image to view my resume quickly, and a Download Resume button to download my resume directly for your records. The last Contact component shows my contact information and a contact form to send me a message to get in contact with me. The footer shows icon links to my GitHub, LinkedIn, and Hackerrank profiles.
+
+![Screenshot of portfolio](./src/assets/images/screenshot.png)
 
 ## License 
 This project is operating under the MIT license. For more detailed information about the license, please click [here](https://opensource.org/licenses/MIT).

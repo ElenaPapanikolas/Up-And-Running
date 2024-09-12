@@ -53,7 +53,7 @@ export default function Navigation() {
                 <Box 
                     as={NavLink} 
                     to='/resume' 
-                    mx={4} s
+                    mx={4} 
                     style={location.pathname === '/resume' ? styles.activeLink : styles.inactiveLink}
                     >
                     Resume
