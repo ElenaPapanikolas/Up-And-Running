@@ -32,7 +32,7 @@ export default function About() {
             </Box> 
             
             <Box m={7} p={4} display='flex' justifyContent='center' >
-                <Image src='./src/assets/images/photo1.jpeg' alt='Photo of Elena Papanikolas' style={styles.Image} mx={4}  />
+                <Image src='./images/photo1.jpeg' alt='Photo of Elena Papanikolas' style={styles.Image} mx={4}  />
             </Box>  
             
         </SimpleGrid>
