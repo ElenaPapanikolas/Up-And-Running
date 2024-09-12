@@ -18,7 +18,7 @@ Installation instructions for application:
 This application is deployed using Netlify. Please see the link below for the deployed application.
 
 ## Usage
-Click [here]() to view the deployed application.
+Click [here](https://elena-papanikolas-portfolio.netlify.app/) to view the deployed application.
 
 Check out my latest developer portfolio. To start, the About Me component is selected by default and tells a little bit about me and shows a current photo. The navigation links at the top of the page allow the user to view Portfolio, Resume, and Contact components. The Portfolio component showcases six of my favorite projects, with a short description and screenshot, and links to the corresponding GitHub repository and deployed application. The next Resume component lists my proficiencies and an image to view my resume quickly, and a Download Resume button to download my resume directly for your records. The last Contact component shows my contact information and a contact form to send me a message to get in contact with me. The footer shows icon links to my GitHub, LinkedIn, and Hackerrank profiles.
 
