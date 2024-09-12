@@ -64,11 +64,13 @@ export default function Portfolio() {
 
     return (
         <Box>
+
             <Box m={4} display='flex' justifyContent='center'>
                 <Heading style= {styles.Heading}>
                     Check Out What I&apos;ve Been Up To
                 </Heading>
             </Box>
+
             <Box p={4}>
                 <SimpleGrid columns={{ base: 1, md: 2, lg: 3 }} spacing={4}>
                     {projects.map((project, index) => (
@@ -83,6 +85,7 @@ export default function Portfolio() {
                     ))}
                 </SimpleGrid>
             </Box>
+            
         </Box>    
     );
 };

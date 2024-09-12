@@ -202,6 +202,7 @@ export default function Contact() {
                 <Text mb={2}><strong>Phone:</strong> 435 229 2627</Text>
             </Box>     
         </Box>
+        
     </SimpleGrid>
     );
 };

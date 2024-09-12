@@ -22,12 +22,12 @@ const theme = extendTheme({
   },
   components: {
     Button: {
-      // Define styles for different color schemes
+      // Defines styles for different color schemes
       variants: {
         solid: {
           _hover: {
-            bg: 'yellow.400', // Set the hover background color
-            color: 'white', // Optionally change the text color on hover
+            bg: 'yellow.400', // Sets the hover background color
+            color: 'white', // Changes the text color on hover
           },
         },
       },
